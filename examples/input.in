@@ -1,0 +1,74 @@
+# The representation of the HEOM in terms of ADOs or MPS 
+representation = ADO
+
+# Number of basis functions for molecular degree of freedom
+nbasisMolecule = 12 
+
+# mass
+mass = 1.0
+
+# Double well frequency
+EquilibriumPosition = 44.444
+
+# Double well barrier
+DoubleWellBarrier = 2250.0, cm^-1
+
+# Double well coordinate range (Bohr)
+DoubleWellXmax = 100.0
+
+# Number of DVR grid points
+nDVR = 500  
+
+# Molecule-bath coupling
+MoleculeBathCoupling = 0.1
+
+# Bath cutoff frequency
+BathCutoffFrequency = 200, cm^-1
+
+# Cavity photon frequency
+CavityFrequency = 1200.0, cm^-1
+
+# Light-matter coupling
+LightMatterCoupling = 0.00125
+
+# Cavity loss strength
+CavityLossStrength = 200.0, fs
+
+# Cavity loss frequency
+CavityLossFrequency = 1000.0, cm^-1
+
+# Number of phonon baths
+nbaths = 2
+
+# Number of Bosonic Pade poles
+npoles = 3 
+
+# Trunction tier
+ntier = 10
+
+# Time step δt (fs)
+dt = 0.5, fs
+
+# Number of real time steps
+Nts = 20000
+
+# Number of trajectories
+ntraj = 1000
+
+# Bath temperature (K)
+temperature = 300.0, K
+
+# filtering threshold
+filter = 1e-7 
+
+# Printing the trajectories and times
+verbose = true
+
+# Observables to print out: Population, Sz, Norm, Flux, Proj
+observables = Norm, Proj, Flux, Population
+
+# Each sys DoF is coupled to its own bath
+SysownBath = true
+
+# Maximal bond dimension
+Dmax = 30 
